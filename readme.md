@@ -57,7 +57,7 @@ La visualización inicial de los datos reveló tanto una **tendencia de crecimie
 **Gráfico Exploratorio:**
 
 ![Gráfico Exploratorio](Imagenes/grafico_exploratorio.png)
-![Gráfico Exploratorio](Imagenes/patrones_tendencias.png)
+![Gráfico Exploratorio](Imagenes/grafico_patronestendencias.png)
 
 
 Se observan patrones estacionales anuales que nos llevaron a ajustar el parámetro estacional en el modelo SARIMA. 
@@ -98,19 +98,29 @@ El modelo **SARIMA (1,1,1)x(1,1,1,12)** fue evaluado utilizando diferentes métr
 . **Clonar el repositorio**:
    Clona este repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/omarz92/prediccion-cmf.git
+   git clone https://github.com/Omarzg92/Modelo-Sarima.git
 
 
+## Asegurate de tener instaladas las bibliotecas necesarias. Ejecutando: 
 
 pip install pandas numpy matplotlib statsmodels
 
-### . **Predicciones**
-  
+### Predicciones
+
 El modelo SARIMA ha generado predicciones para los próximos 12 meses (de abril 2024 a marzo 2025). Estas predicciones muestran una tendencia de crecimiento continuo en el stock de cartera de consumo en incumplimiento, con variaciones estacionales claras observadas en años anteriores.
 
 **Gráfico de Predicciones:**
 
 ![Gráfico de Predicciones](Imagenes/grafico_predicciones.png)
+
+### Observados vs Predicho
+
+A continuación, se presenta un gráfico que compara los valores observados con los predichos por el modelo SARIMA. Esta comparación revela que los valores observados están en sintonía con los valores predichos, aunque se pueden notar ciertos movimientos o patrones que se desmarcan ligeramente. Sin embargo, las similitudes son muy evidentes.
+
+**Gráfico de Observados vs Predicho:**
+
+![Observado vs Predicho](Imagenes/grafico_observadopredicho.png)
+
 
 ## Conclusiones y Resultados
 
@@ -120,8 +130,8 @@ Este modelo es útil para proyectar el comportamiento futuro de la cartera en in
 
 ## Futuras Mejoras
 
-- Probar otros modelos de series temporales, como **Prophet**.
-- Incorporar variables adicionales (por ejemplo, indicadores macroeconómicos) para mejorar la precisión del modelo.
+- Probar otros modelos de series temporales
+- Incorporar variables adicionales o datos exógenos (por ejemplo, indicadores macroeconómicos) para mejorar la precisión del modelo.
 - Ajustar los parámetros del modelo SARIMA mediante técnicas avanzadas de optimización.
 
 ## Autor
