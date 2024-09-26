@@ -6,17 +6,18 @@ Este proyecto presenta un análisis de series temporales utilizando el modelo **
 
 ## Tabla de Contenidos
 
-1. [Descripción del Proyecto]
-2. [Estructura del Proyecto]
+1. [Descripción del Proyecto](#descripción-del-proyecto)
+2. [Estructura del Proyecto](#estructura-del-proyecto)
 3. [Metodología](#metodología)
-4. [Exploración y Visualización de Datos]
-5. [Modelo SARIMA]
-6. [Evaluación del Modelo]
-7. [Instalación y Uso]
-8. [Predicciones]
-9. [Conclusiones y Resultados]
-10. [Futuras Mejoras]
-11. [Autor]
+4. [Exploración y Visualización de Datos](#exploración-y-visualización-de-datos)
+5. [Modelo SARIMA](#modelo-sarima)
+6. [Evaluación del Modelo](#evaluación-del-modelo)
+7. [Instalación y Uso](#instalación-y-uso)
+8. [Predicciones](#predicciones)
+9. [Conclusiones y Resultados](#conclusiones-y-resultados)
+10. [Futuras Mejoras](#futuras-mejoras)
+11. [Autor](#autor)
+
 
 ---
 
@@ -59,9 +60,14 @@ La visualización inicial de los datos reveló tanto una **tendencia de crecimie
 ![Gráfico Exploratorio](Imagenes/grafico_exploratorio.png)
 ![Gráfico Exploratorio](Imagenes/grafico_patronestendencias.png)
 
-
 Se observan patrones estacionales anuales que nos llevaron a ajustar el parámetro estacional en el modelo SARIMA. 
 Visualizamos la serie para observar patrones de tendencia, estacionalidad, etc.
+
+![Gráfico de Predicciones](Imagenes/grafico_predicciones.png)
+![Observado vs Predicho](Imagenes/grafico_observadopredicho.png)
+
+
+
 
 ---
 
@@ -107,20 +113,12 @@ pip install pandas numpy matplotlib statsmodels
 
 ### Predicciones
 
-El modelo SARIMA ha generado predicciones para los próximos 12 meses (de abril 2024 a marzo 2025). Estas predicciones muestran una tendencia de crecimiento continuo en el stock de cartera de consumo en incumplimiento, con variaciones estacionales claras observadas en años anteriores.
-
-**Gráfico de Predicciones:**
-
-![Gráfico de Predicciones](Imagenes/grafico_predicciones.png)
+El modelo SARIMA predice un crecimiento continuo en el stock de cartera de consumo en incumplimiento, con fluctuaciones estacionales observadas en los últimos años.
 
 ### Observados vs Predicho
 
-A continuación, se presenta un gráfico que compara los valores observados con los predichos por el modelo SARIMA. Esta comparación revela que los valores observados están en sintonía con los valores predichos, aunque se pueden notar ciertos movimientos o patrones que se desmarcan ligeramente. Sin embargo, las similitudes son muy evidentes.
 
-**Gráfico de Observados vs Predicho:**
-
-![Observado vs Predicho](Imagenes/grafico_observadopredicho.png)
-
+Las predicciones muestran una tendencia de crecimiento y estacionalidad clara, similar a los años anteriores.
 
 ## Conclusiones y Resultados
 
