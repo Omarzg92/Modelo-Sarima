@@ -95,13 +95,12 @@ BIC                           3138.443
 
 El modelo **SARIMA (1,1,1)x(1,1,1,12)** fue evaluado utilizando diferentes métricas estadísticas como el AIC, BIC, y el test de Box-Ljung. Los resultados sugieren que el modelo capta adecuadamente la estacionalidad de los datos, con una reducción significativa en los valores de AIC y BIC en comparación con otros modelos probados.
 
-- **AIC:** 3123.525
-- **BIC:** 3138.443
-- **Test de Box-Ljung:** Indica que los residuos no son ruido blanco, lo que sugiere que el modelo puede mejorarse aún más.
+- **AIC** 3123.525
+- **BIC** 3138.443
+- **Test de Box-Ljung** Indica que los residuos no son ruido blanco, lo que sugiere que el modelo puede mejorarse aún más.
 
 ## Instalación y Uso
 
-. **Clonar el repositorio**:
    Clona este repositorio en tu máquina local:
    ```bash
    git clone https://github.com/Omarzg92/Modelo-Sarima.git
@@ -122,7 +121,7 @@ Las predicciones muestran una tendencia de crecimiento y estacionalidad clara, s
 
 ## Conclusiones y Resultados
 
-El modelo **SARIMA** ha sido capaz de capturar la tendencia y estacionalidad presente en los datos históricos. Los resultados sugieren que el **stock de cartera en incumplimiento** del **Banco de Chile** seguirá un patrón de crecimiento con fluctuaciones estacionales a lo largo del próximo año.
+El modelo **SARIMA** ha sido capaz de capturar la tendencia y estacionalidad presente en los datos históricos. Los resultados sugieren que el **stock e cartera en incumplimiento** del **Banco de Chile** seguirá un patrón de crecimiento con fluctuaciones estacionales a lo largo del próximo año.
 
 Este modelo es útil para proyectar el comportamiento futuro de la cartera en incumplimiento, pero podría mejorarse incorporando más variables macroeconómicas o financieras externas que influyan en la morosidad.
 
